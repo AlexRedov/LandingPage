@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: Nunito Sans, Arial;
+}
+body * {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.button {
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    padding: 13px 33px;
+    text-transform: uppercase;
+    color: white;
+    font-style: italic;
+}
+
+.logo {
+    color: #E3B873;
+}
+
+.header {
+    background-color: black;
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-around;
+    height: 83px;
+    align-items: center;
+}
+
+.headernav {
+    list-style: none;
+    display: flex;
+}
+
+.phone {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #E3B873;
+}
+.headernav__item {
+    margin-right: 47px;
+}
+
+.headernav__item a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    height: 707px;
+    position: relative;
+    padding-top: 194px;
+    
+}
+.hero_content{
+    position: relative;
+    z-index: 1;
+    
+}
+.title {
+    margin: 0;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-right: 627px;
+    
+}
+
+.title span {
+    color: #E3B873;
+}
+
+.hero_overlay {
+    content: '';
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .7);
+}
+.benefit {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+    
+}
+.hero_button {
+    width: 207px;
+    height: 51px;
+    margin-right: 20px;
+    padding: 0;
+}
+#button2 {
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    background-color: transparent;
+    font-family: Nunito Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px 23px;
+    width: 207px;
+    height: 51px;
+}
