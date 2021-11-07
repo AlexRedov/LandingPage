@@ -1,3 +1,6 @@
+
+
+/*# sourceMappingURL=style.css.map */
 body {
     margin: 0;
     font-family: Nunito Sans, Arial;
@@ -21,6 +24,11 @@ body * {
     text-transform: uppercase;
     color: white;
     font-style: italic;
+    font-family: Nunito Sans;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
 }
 
 .logo {
@@ -53,6 +61,7 @@ body * {
     text-decoration-line: underline;
     color: #E3B873;
 }
+
 .headernav__item {
     margin-right: 47px;
 }
@@ -70,22 +79,28 @@ body * {
     padding-top: 194px;
     
 }
+
 .hero_content{
     position: relative;
     z-index: 1;
     
 }
+
 .title {
     margin: 0;
     font-family: Yeseva One;
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
-    line-height: 53px;
     text-transform: uppercase;
     color: #FFFFFF;
+    line-height: 1.3;
+        
+}
+
+.titleh1 {
+    font-size: 40px;
+    line-height: 53px;
     margin-right: 627px;
-    
 }
 
 .title span {
@@ -101,33 +116,120 @@ body * {
     left: 0;
     background-color: rgba(0,0,0, .7);
 }
-.benefit {
+
+.paragraph {
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
-    line-height: 36px;
     color: #FFFFFF;
     
 }
-.hero_button {
+
+.benefit {
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.hero_button1 {
     width: 207px;
     height: 51px;
     margin-right: 20px;
     padding: 0;
 }
-#button2 {
+
+.hero_button2 {
     border: 1px solid #FFFFFF;
-    border-radius: 2px;
     background-color: transparent;
-    font-family: Nunito Sans;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 15px;
-    text-align: center;
-    color: #FFFFFF;
     padding: 20px 23px;
     width: 207px;
     height: 51px;
 }
+
+.projects {
+    background-color: #131313;
+}
+
+.completed_project {
+    padding-top: 176px;
+    height: max-content;
+}
+
+.titleh2 {
+    font-size: 27px;
+    letter-spacing: -0.07em;
+    color: #E3B873;
+    margin-bottom: 34px;
+}
+
+
+.cities {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 52px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: flex-end;
+        
+}
+
+.text {
+    background-image: url(../images/projects.jpg);
+    background-position: right;
+    background-size: 679px 482px;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin-right: 100px;
+    
+}
+
+.cities a {
+margin-right: 60px;
+text-decoration: none;
+font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+text-transform: uppercase;
+color: rgba(255, 255, 255, 0.3);
+}
+
+.cities li {
+    list-style-type: none;
+}
+
+.about {
+    font-size: 14px;
+    line-height: 27px;
+    margin: 0 0 8px 0;
+}
+
+.textgroup {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 96px;
+}
+
+.textgroup_city {
+    padding-right: 124px;
+}
+
+.textgroup_time {
+    padding-right: 86px;
+}
+
+.titleh3 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #E3B873;
+    padding-bottom: 10px;
+    padding-top: 34px;
+}
+
+.project_textgroup {
+    margin: 0;
+    font-size: 13px;
+    line-height: 21px;
+}
+
