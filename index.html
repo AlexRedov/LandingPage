@@ -13,23 +13,27 @@
 
     <!--Хэдер, меню навигации-->
     <header class="header">
-        <div class="container header_content">
-            <div class="logo">
-                IC "Repair Design Project" 
-            </div>
-            <nav>
-                <ul  class="headernav">
-                    <li class="headernav__item"><a href="#" class="link header_link">HOME</a></li>
-                    <li class="headernav__item"><a href="#project" class="link header_link">PROJECTS</a></li>
-                    <li class="headernav__item"><a href="#" class="link header_link">MEASUREMENT</a></li>
-                    <li class="headernav__item"><a href="#" class="link header_link">TEAM</a></li>
-                    <li class="headernav__item"><a href="#" class="link header_link">REVIEWS</a></li>
-                    <li class="headernav__item"><a href="#" class="link header_link">CONTACTS</a></li>
-                </ul>
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="#" class="header__nav link is-logo">IC "Repair Design Project" </a>
+                </div>
+                <nav>
+                    <ul  class="header__nav">
+                        <li class="header__nav item"><a href="#" class="header__nav link">HOME</a></li>
+                        <li class="header__nav item"><a href="#project" class="header__nav link">PROJECTS</a></li>
+                        <li class="header__nav item"><a href="#" class="header__nav link">MEASUREMENT</a></li>
+                        <li class="header__nav item"><a href="#" class="header__nav link">TEAM</a></li>
+                        <li class="header__nav item"><a href="#" class="header__nav link">REVIEWS</a></li>
+                        <li class="header__nav item"><a href="#" class="header__nav link">CONTACTS</a></li>
+                        <li class="header__nav item"><a  href="tel:+79287683239" class="header__nav link phone">+7 (928) 768-32-39</a> </li>
+    
+                    </ul>
+                    
+                </nav>
                 
-            </nav>
-            <p class="phone">+7 (928) 768-32-39 </p>
-            <button class="button">Request a call</button>
+                <button class="header__button">Request a call</button>
+            </div>
         </div>
     </header>
 
@@ -39,58 +43,59 @@
         <!--Секция Hero-->
         <section class="hero">
             <div class="container hero_content">
-                <h1 class="title titleh1">Turnkey Repair in the<br> city of <span class="span">Rostov-on-Don</span></h1>
-                <p class="paragraph benefit">
+                <h1>Turnkey Repair in the<br> city of <span class="span">Rostov-on-Don</span></h1>
+                <p class="hero__paragraph">
                     Get ready-made turnkey repairs on time<br>
                     with work time saving up to 45 days and 20% from<br>
                     cost of materials due to the organization of work
                 </p>
-                <button class="button hero_button">CALCULATE THE COST</button>
-                <button class="button hero_button">SUBMIT YOUR APPLICATION</button>
-
+                <button class="hero__button">CALCULATE THE COST</button>
+                <button class="hero__button">SUBMIT YOUR APPLICATION</button>
+                
             </div>
-            <div class="hero_overlay"></div>
+            <div class="hero__overlay"></div>
+            
 
         </section>
 
         <!--Cекция проекты-->
         <section class="projects">
-            <div class="container project">
-                <ul class="completed_project cities">
-                    <li><a href="#" class="link project_link">Rostov-on-Don, Admiral</a></li>
-                    <li><a href="#" class="link project_link">Sochi Thieves</a></li>
-                    <li><a href="#" class="link project_link">Rostov-on-Don Patriotic</a></li>
+            <div class="container">
+                <ul class="project__cities">
+                    <li><a href="#" class="project__cities link">Rostov-on-Don, Admiral</a></li>
+                    <li><a href="#" class="project__cities link">Sochi Thieves</a></li>
+                    <li><a href="#" class="project__cities link">Rostov-on-Don Patriotic</a></li>
                 </ul>
-                <div class="completed_project" id="project">
-                    <div class="completed_project text">
-                        <h2 class="title titleh2">
+                <div class="project__complited" id="project">
+                    <div class="project__complited left">
+                        <h2>
                             Completed <br>project
                         </h2>
-                        <p class="paragraph about">
+                        <p>
                             Only a small part of the work performed by our company is presented<br> on the site. For 14 years on in the construction<br> 
                             market we have made happy more than 1000 families
                         </p>
                         <div class="textgroup">
-                            <div class="textgroup_city">
-                                <h3 class="title titleh3">City:</h3>
-                                <p class="paragraph project_textgroup">Rostov-on-Don<br>
+                            <div class="textgroup__city">
+                                <h3 class="titleh3__project">City:</h3>
+                                <p>Rostov-on-Don<br>
                                     LCD admiral</p>
                             </div>
-                            <div class="textgroup_area">
-                                <h3 class="title titleh3">Appartament area:</h3>
-                                <p class="paragraph project_textgroup" >81m2</p>
+                            <div class="textgroup__area">
+                                <h3 class="titleh3__project">Appartament area:</h3>
+                                <p>81m2</p>
                             </div>
-                            <div class="textgroup_time">
-                                <h3 class="title titleh3">Repair time:</h3>
-                                <p class="paragraph project_textgroup">3.5 months</p> 
+                            <div class="textgroup__time">
+                                <h3 class="titleh3__project">Repair time:</h3>
+                                <p>3.5 months</p> 
                             </div>
-                            <div class="textgroup_cost">
-                                <h3 class="title titleh3">Repair cost:</h3>
-                                <p class="paragraph project_textgroup">Uppon request</p>
+                            <div class="textgroup__cost">
+                                <h3 class="titleh3__project">Repair cost:</h3>
+                                <p>Uppon request</p>
                             </div>
                         </div>
                     </div>
-                    <div class="completed_project image">
+                    <div class="project__complited image">
                         <img src="images/projects.jpg" alt="sample project" class="image_project">
 
                     </div>
@@ -101,95 +106,248 @@
 
         <!--Секция онлайн контроль-->
         <section class="control">
-            <div class="container control">
-                <h3 class="title titleh3-1">Online control</h3>
-                <div class="camimg">
-                    <img src="" alt="">
+            <div class="container">
+                <h3 class="titleh3__control">Online control</h3>
+                <div class="control__camimg">
+                    <img src="images/camera.svg" alt="camera">
                 </div>
-                <img src="" alt="">
-                <hr>
+                <div class="control__camimg wrapper">
+                    <img src="images/video.jpg" alt="video">
+                    <div class="background_play">
+                        <div class="play">
+                            <img src="images/Play1.svg" alt="play">
+                        </div>
+                    </div>
+                    
+                    <div class="control__camimg overlay"></div>
+                    
+                </div>
+                <div class="hr"></div>
                 <p>
-                    At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
+                    At each facility, a camera is installed that broadcasts the progress of work on the<br> clock. At any time, you can go to our website and monitor the progress of work in<br>
+                     your apartment. You can watch the live broadcast from one of our facilities!<br>
                     Leave a request below and you will receive a link to the broadcast.
                 </p>
-                <form action=""></form>
+                <div class="wrapper">
+                    <form class="control__form">
+                        <div class="input_item">
+                            <label class="control__form label1">Name</label>
+                            <input type="text" placeholder="What's your name:">
+                        </div>
+                        <div class="input_item">
+                            <label class="control__form label2">Phone</label>
+                            <input type="phone" placeholder="Your phone number:">
+                        </div>
+                        
+                        <input type="submit" value="Submit" class="button">
+                        <div class="input_item2">
+                            <input type="checkbox" src="images/checkbox.svg">
+                            <label for="checkbox" class="control__form label3">I agree to the processing of personal data</label>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
 
         <!-- Секция Типы ремнота -->
         <section class="typerepaire">
-            <div class="container typerepaire">
-                <h3 class="title titleh3-2">
+            <div class="container">
+                <h3 class="titleh3__repaire">
                     TYPES OF REPAIR
                 </h3>
-                <div class="icon">
-
+                <div class="typerepaire__icon">
+                    <img src="images/instruments.svg" alt="instruments">
                 </div>
-                <!-- Блок картинка текст с описанием и кнопка *3 -->
-                <div>
-                    <div>
-                        <ul>
-
-                        </ul>
+                <!-- Блок картинка текст с описанием и блок с указанием цены -->
+                <div class="typerepaire__main">
+                    <div class="typerepaire__block">
+                        <img src="images/room1.jpg" alt="room">
+                        <div class="typerepaire__block textblock">
+                            <h4>Redecorating</h4>
+                            <ul class="typerepaire__block list">
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                                
+                            </ul>
+                            <div class="typerepaire__block costcontent">
+                                <p>from 900 rub / m2</p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-
-                    </div>
+                        <div class="typerepaire__block">
+                            <img src="images/room2.jpg" alt="room">
+                            <div class="typerepaire__block textblock">
+                                <h4>Overhaul</h4>
+                                <ul class="typerepaire__block list">
+                                    <li>Dismantling of old coatings</li>
+                                    <li>Wallpapering</li>
+                                    <li>Painting walls and ceilings</li>
+                                    <li>Laying flooring</li>
+                                    <li>Replacing plumbing</li>
+                                    <li>Replacing sockets and switches</li>
+                                    <li>Replacing doors</li>
+                                    
+                                </ul>
+                                <div class="typerepaire__block costcontent">
+                                    <p>from 1800 rub / m2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="typerepaire__block">
+                            <img src="images/room3.jpg" alt="room">
+                            <div class="typerepaire__block textblock">
+                                <h4>Designer Repair</h4>
+                                <ul class="typerepaire__block list">
+                                    <li>Dismantling of old coatings</li>
+                                    <li>Wallpapering</li>
+                                    <li>Painting walls and ceilings</li>
+                                    <li>Laying flooring</li>
+                                    <li>Replacing plumbing</li>
+                                    <li>Replacing sockets and switches</li>
+                                    <li>Replacing doors</li>
+                                    
+                                </ul>
+                                <div class="typerepaire__block costcontent">
+                                    <p>from 4000 rub / m2</p>
+                                </div>
+                            </div>
+                        </div>
                 </div>
-
-                <div>
-                    <div>
-                        <ul>
-
-                        </ul>
-                    </div>
-                    <div>
-                        
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <ul>
-
-                        </ul>
-                    </div>
-                    <div>
-                        
-                    </div>
-                </div>
-
+                    
+                
                 <!-- Блок с преимуществами и формой для отправки заявки -->
-                <div>
-                    <div>
-
+                <div class="typerepaire__main2">
+                    <div class="typerepaire__main2 leftblock">
+                        <div class="block">
+                            <div class="text">
+                                01
+                            </div>
+                            <p>
+                                Our specialist will arrive for measurements per day<br>
+                                contact, or appoint a date convenient for you
+                            </p>
+                        </div>
+                        <div class="block">
+                            <div class="text">
+                                02
+                            </div>
+                            <p>
+                                Free metering
+                            </p>
+                        </div>
+                        <div class="block">
+                            <div class="text">
+                                03
+                            </div>
+                            <p>
+                                Free consultation
+                            </p>
+                        </div>
+                        <div class="block">
+                            <div class="text">
+                                04
+                            </div>
+                            <p>
+                                Get a cost estimate and<br>
+                                the timing of your future repairs   
+                            </p>
+                        </div>
+                        
                     </div>
-                    <form action="">
+                    <form class="typerepaire__main2 rightform">
+                        <div class="request">
+                            <p>
+                                Leave a request for free<br>
+                                departure of the measurer
+                            </p>
+                        </div>
+                        <div class="inputblock">
+                            <label for="input">Name</label>
+                            <input class="inputtext" type="text" placeholder="What's your name:">
+                        </div>
+                        <div class="inputblock">
+                            <label for="input">Phone</label>
+                            <input class="inputtext" type="tel" placeholder="Your phone number:">
+                        </div>
+                        <div class="inputblock">
+                            <label for="input">Email</label>
+                            <input  class="inputtext" type="email" placeholder="Your email">
+                        </div>
 
+                        <div class="divcheckbox">
+                            <input type="checkbox" class="checkbox-input" id="checkbox">
+                            <label for="checkbox" class="label3">I agree to the processing of personal data</label>
+                        </div>
+                        <input type="submit" value="Call the measurer" class="button">
+                       
                     </form>
                 </div>
-                <div class="icon pig">
-
-                    <p>
-                        Help save 10 - 20% of the 
-                        cost of materials
-                    </p>
+                <div class="typerepaire__cost">
+                    <div class="icon__pig">
+                        <img src="images/pig.svg" alt="pig">
+                    </div>
+                    
+                        <p>
+                            Help save 10 - 20% of the <br>
+                            cost of materials
+                        </p>
+                                     
                 </div>
+                
             </div>
         </section>
 
         <!-- Секция с описанием стилей работ -->
         <section class="fantasies">
-            <div class="container fantasies">
-                <div class="content">
-
+            <div class="container">
+                <div class="fantasies__content">
+                    <div class="fantasies__content list">
+                        <h3 class="title titleh3">
+                            We realize your<br>
+                            wildest fantasies   
+                        </h3>
+                        <ul>
+                            <li><a href="#">American classic</a></li>
+                            <li><a href="#">Empire</a></li>
+                            <li><a href="#">Classical</a></li>
+                            <li><a href="#">Loft</a></li>
+                            <li><a href="#">Minimalism</a></li>
+                            <li><a href="#">Provence</a></li>
+                            <li><a href="#">Romanticism</a></li>
+                            <li><a href="#">Scandinavian style</a></li>
+                            <li><a href="#">Mediterranean style</a></li>
+                            <li><a href="#">High tech</a></li>
+                            <li><a href="#">Eclecticism</a></li>
+    
+                        </ul>
+                    </div>
+                    <div class="fantasies__content images">
+                        <div class="item1">
+                            <img src="images/fantasies1.jpg" alt="">
+                        </div>
+                        <div class="item2">
+                            <img src="images/fantasies3.jpg" alt="">
+                        </div>
+                        <div class="item3">
+                            <img src="images/fantasies2.jpg" alt="">
+                        </div>
+                        <div class="item4">
+                            <img src="images/fantasies4.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="fantasies__overlay"></div>
         </section>
 
         <!-- Cекция клиенты -->
         <section class="clients">
-            <div class="container clients">
+            <div class="container">
                 <h3 class="title titleh3-2">
                     Our clients
                 </h3>
@@ -227,7 +385,7 @@
                         </div>
                     </div>
                 </div>
-                <form action="">
+                <form class="form">
 
                 </form>
             </div>
@@ -235,18 +393,20 @@
 
         <!-- Секция с местоположением -->
         <section class="location">
-            <div class="container location">
+            <div class="container">
                 <h3 class="title titleh3">
                     Rostov-on-Don, Nansen St., 239 Shopping Center
                     Decorum Tel +7 (928) 768 32 29
                 </h3>
                 <div class="icon"></div>
-                <iframe src="" frameborder="0"></iframe>
+                <iframe src=""></iframe>
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container footer_content">
+     <div class="container">
             <div class="logo">
                 IC "Repair Design Project" 
             </div>
@@ -258,11 +418,13 @@
                     <li class="headernav__item"><a href="#" class="link header_link">TEAM</a></li>
                     <li class="headernav__item"><a href="#" class="link header_link">REVIEWS</a></li>
                     <li class="headernav__item"><a href="#" class="link header_link">CONTACTS</a></li>
+                    <li class="headernav__item"><a  href="tel:+79287683239" class="link header_link_tel">+7 (928) 768-32-39</a> </li>
+
                 </ul>
                 
             </nav>
-            <p class="phone">+7 (928) 768-32-39 </p>
-            <button class="button">Request a call</button>
+            
+            <button class="button button_header">Request a call</button>
         </div>
     </footer>
 </body>
