@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -42,18 +42,20 @@
 
         <!--Секция Hero-->
         <section class="hero">
-            <div class="container hero_content">
-                <h1>Turnkey Repair in the<br> city of <span class="span">Rostov-on-Don</span></h1>
-                <p class="hero__paragraph">
+            <div class="container">
+                <div class="hero__content">
+                    <h1>Turnkey Repair in the<br> city of <span class="span">Rostov-on-Don</span></h1>
+                    <p class="hero__paragraph">
                     Get ready-made turnkey repairs on time<br>
                     with work time saving up to 45 days and 20% from<br>
                     cost of materials due to the organization of work
                 </p>
                 <button class="hero__button">CALCULATE THE COST</button>
                 <button class="hero__button">SUBMIT YOUR APPLICATION</button>
-                
+                </div>
+                <div class="hero__overlay"></div>
             </div>
-            <div class="hero__overlay"></div>
+            
             
 
         </section>
@@ -108,10 +110,12 @@
         <section class="control">
             <div class="container">
                 <h3 class="titleh3__control">Online control</h3>
-                <div class="control__camimg">
-                    <img src="images/camera.svg" alt="camera">
+                <div class="control__icon">
+                    <div class="img">
+                        <img src="images/camera.svg" alt="camera">
+                    </div>
                 </div>
-                <div class="control__camimg wrapper">
+                <div class="control__wrapper">
                     <img src="images/video.jpg" alt="video">
                     <div class="background_play">
                         <div class="play">
@@ -128,7 +132,7 @@
                      your apartment. You can watch the live broadcast from one of our facilities!<br>
                     Leave a request below and you will receive a link to the broadcast.
                 </p>
-                <div class="wrapper">
+                <div class="control__wrapper">
                     <form class="control__form">
                         <div class="input_item">
                             <label class="control__form label1">Name</label>
@@ -156,7 +160,10 @@
                     TYPES OF REPAIR
                 </h3>
                 <div class="typerepaire__icon">
-                    <img src="images/instruments.svg" alt="instruments">
+                    <div class="img">
+                        <img src="images/instruments.svg" alt="instruments">
+
+                    </div>
                 </div>
                 <!-- Блок картинка текст с описанием и блок с указанием цены -->
                 <div class="typerepaire__main">
@@ -266,22 +273,24 @@
                                 departure of the measurer
                             </p>
                         </div>
-                        <div class="inputblock">
-                            <label for="input">Name</label>
-                            <input class="inputtext" type="text" placeholder="What's your name:">
-                        </div>
-                        <div class="inputblock">
-                            <label for="input">Phone</label>
-                            <input class="inputtext" type="tel" placeholder="Your phone number:">
-                        </div>
-                        <div class="inputblock">
-                            <label for="input">Email</label>
-                            <input  class="inputtext" type="email" placeholder="Your email">
+                        <div class="group__inputblock">
+                            <div class="inputblock">
+                                <label for="input" class="label">Name</label>
+                                <input class="inputtext" type="text" value="What's your name:">
+                            </div>
+                            <div class="inputblock">
+                                <label for="input" class="label">Phone</label>
+                                <input class="inputtext" type="tel" value="Your phone number:">
+                            </div>
+                            <div class="inputblock">
+                                <label for="input" class="label">Email</label>
+                                <input  class="inputtext" type="email" value="Your email">
+                            </div>
                         </div>
 
                         <div class="divcheckbox">
-                            <input type="checkbox" class="checkbox-input" id="checkbox">
-                            <label for="checkbox" class="label3">I agree to the processing of personal data</label>
+                            <input type="checkbox" class="inputcheck" id="checkbox">
+                            <label for="checkbox" class="labelcheck">I agree to the processing of personal data</label>
                         </div>
                         <input type="submit" value="Call the measurer" class="button">
                        
@@ -341,66 +350,178 @@
                         </div>
                     </div>
                 </div>
+                <div class="fantasies__overlay"></div>
             </div>
-            <div class="fantasies__overlay"></div>
+            
         </section>
 
         <!-- Cекция клиенты -->
         <section class="clients">
             <div class="container">
-                <h3 class="title titleh3-2">
+                <h3 class="titleh3__clients">
                     Our clients
                 </h3>
-                <div class="icon">
-
+                <div class="clients__icon">
+                    <div class="img">
+                        <img src="images/hands.svg" alt="hands">
+                    </div>
                 </div>
-                <p>
-                    80% of our customers recommend us to their
-                    friends and family.
-                </p>
+                <div class="clients_paragraph">
+                    <p>
+                        80% of our customers recommend us to their<br>
+                        friends and family.
+                    </p>
+                </div>
+                
                 <!-- Блок с отзывами клиентов -->
-                <div>
-                    <div>
-                        <img src="" alt="">
-                        <h4></h4>
-                        <p></p>
-                        <div>
-                            <!-- иконка + текст снизу -->
+                <div class="clients__reviews">
+                    <div class="reviews">
+                        <div class="groupimg">
+                            <img class="reviews__img" src="images/fase_client1.jpg" alt="fase_client1">
+                            <h4>Fedosova Maria<br>
+                            Konstantinovna</h4>
+                        </div>
+                         
+                         <div class="reviews_text">
+                            <p class="item">
+                                I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project 
+                                to Georgia for its professionalism and approach.
+                            </p>
+                            <p class="item">
+                                The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
+                            </p>
+                         </div>
+                         <div class="group">
+                            <div class="img">
+                                <img src="images/graph1.svg" alt="graph">
+                            </div>
+                            <div class="text">
+                                <p>40 M2</p>
+                            </div>    
+                            <div class="img">
+                                <img src="images/Graph2.svg" alt="graph">
+                            </div>
+                            <div class="text">
+                                <p>48 DAYS</p>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <img src="" alt="">
-                        <h4></h4>
-                        <p></p>
-                        <div>
-                            <!-- иконка + текст снизу -->
+                    <div class="reviews">
+                        <div class="groupimg">
+                            <img class="reviews__img" src="images/fase_client2.jpg" alt="fase_client2">
+                            <h4>Afanasyev Sergey<br>
+                                Alexandrovich
+                            </h4>
+                        </div>
+                        <div class="reviews_text">
+                            <p class="item"> 
+                                I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project 
+                                to Georgia for its professionalism and approach.
+                            </p>
+                            <p class="item">
+                                The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
+                            </p>
+                        </div>
+                        
+                        <div class="group">
+                            <div class="img">
+                                <img src="images/graph1.svg" alt="graph">
+                            </div>
+                            <div class="text">
+                                <p>90 M2</p>
+                            </div>    
+                            <div class="img">
+                                <img src="images/Graph2.svg" alt="graph">
+                            </div>
+                            <div class="text">
+                                <p>128 DAYS</p>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <img src="" alt="">
-                        <h4></h4>
-                        <p></p>
-                        <div>
-                            <!-- иконка + текст снизу -->
+                    <div class="reviews">
+                        <div class="groupimg">
+                            <img class="reviews__img" src="images/fase_client3.jpg" alt="fase_client3">
+                            <h4>Kiriev Egor<br>
+                                Leonidovich
+                            </h4>
+                        </div>
+                        <div class="reviews_text">
+                            <p class="item">
+                                I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project 
+                                to Georgia for its professionalism and approach.
+                            </p>
+                            <p class="item">
+                                The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
+                            </p>
+                        </div>
+                        <div class="group">
+                            <div class="img">
+                                <img src="images/graph1.svg" alt="graph">
+                            </div>
+                            <div class="text">
+                                <p>56 M2</p>
+                            </div>    
+                            <div class="img">
+                                <img src="images/Graph2.svg" alt="graph">
+                            </div>
+                            <div class="text">
+                                <p>86 DAYS</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <form class="form">
-
-                </form>
+                <div class="clients__backgroundcolor">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </div>
             </div>
         </section>
 
         <!-- Секция с местоположением -->
         <section class="location">
             <div class="container">
-                <h3 class="title titleh3">
-                    Rostov-on-Don, Nansen St., 239 Shopping Center
-                    Decorum Tel +7 (928) 768 32 29
-                </h3>
-                <div class="icon"></div>
-                <iframe src=""></iframe>
+                <div class="location__content">
+                    <form class="form">
+                        <h3 class="titleh3__location"> 
+                            have any questions?
+                        </h3>
+                        <div class="inputblock">
+                            <label for="input" class="label">Name</label>
+                            <input type="text" class="inputtext" value="What's your name:">
+                        </div>
+                        <div class="inputblock">
+                            <label for="input"  class="label">Phone</label>
+                            <input type="text" class="inputtext" value="Your phone number:">
+                        </div>
+                        <div class="inputblock">
+                            <label for="input"  class="label">Question</label>
+                            <input type="text" class="inputtext" value="I want to know:">
+                        </div>
+                        <div class="divcheckbox">
+                            <input type="checkbox" class="inputcheck">
+                            <label for="checkbox"  class="labelcheck">I agree to the processing of personal data</label>
+                        </div>
+                        <input type="submit" value="SUBMIT" class="button">
+                    </form>
+    
+    
+                    <h3 class="titleh3__location">
+                        Rostov-on-Don, Nansen St., 239 Shopping Center<br>
+                        Decorum Tel +7 (928) 768 32 29
+                    </h3>
+                    <div class="group__icon">
+                        <div class="icon">
+                            <img src="images/mail.svg" alt="mail">
+                        </div>
+                        <div class="icon">
+                            <img src="images/instagram.svg" alt="instagram">
+                        </div>
+                    </div>
+                    <iframe src="https://api-maps.yandex.ru/frame/v1/-/CVh7YBYg?"class="maps"></iframe>
+                </div>
+                <div class="location__overlay"></div>
             </div>
+            
         </section>
     </main>
 
