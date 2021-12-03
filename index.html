@@ -145,8 +145,8 @@
                         
                         <input type="submit" value="Submit" class="button">
                         <div class="input_item2">
-                            <input type="checkbox" src="images/checkbox.svg">
-                            <label for="checkbox" class="control__form label3">I agree to the processing of personal data</label>
+                            <input type="checkbox" src="images/checkbox.svg" class="inputcheck" id="checkbox__1">
+                            <label for="checkbox__1" class="control__form label3">I agree to the processing of personal data</label>
                         </div>
                     </form>
                 </div>
@@ -289,8 +289,8 @@
                         </div>
 
                         <div class="divcheckbox">
-                            <input type="checkbox" class="inputcheck" id="checkbox">
-                            <label for="checkbox" class="labelcheck">I agree to the processing of personal data</label>
+                            <input type="checkbox" class="inputcheck" id="checkbox__2">
+                            <label for="checkbox__2" class="labelcheck">I agree to the processing of personal data</label>
                         </div>
                         <input type="submit" value="Call the measurer" class="button">
                        
@@ -485,21 +485,23 @@
                         <h3 class="titleh3__location"> 
                             have any questions?
                         </h3>
-                        <div class="inputblock">
-                            <label for="input" class="label">Name</label>
-                            <input type="text" class="inputtext" value="What's your name:">
-                        </div>
-                        <div class="inputblock">
-                            <label for="input"  class="label">Phone</label>
-                            <input type="text" class="inputtext" value="Your phone number:">
+                        <div class="group__inputblock">
+                            <div class="inputblock">
+                                <label for="input" class="label">Name</label>
+                                <input type="text" class="inputtext" value="What's your name:">
+                            </div>
+                            <div class="inputblock">
+                                <label for="input"  class="label">Phone</label>
+                                <input type="text" class="inputtext" value="Your phone number:">
+                            </div>
                         </div>
                         <div class="inputblock">
                             <label for="input"  class="label">Question</label>
                             <input type="text" class="inputtext" value="I want to know:">
                         </div>
                         <div class="divcheckbox">
-                            <input type="checkbox" class="inputcheck">
-                            <label for="checkbox"  class="labelcheck">I agree to the processing of personal data</label>
+                            <input type="checkbox" class="inputcheck" id="checkbox__3">
+                            <label for="checkbox__3"  class="labelcheck">I agree to the processing of personal data</label>
                         </div>
                         <input type="submit" value="SUBMIT" class="button">
                     </form>
@@ -526,27 +528,29 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-     <div class="container">
-            <div class="logo">
-                IC "Repair Design Project" 
-            </div>
-            <nav>
-                <ul  class="headernav">
-                    <li class="headernav__item"><a href="#" class="link header_link">HOME</a></li>
-                    <li class="headernav__item"><a href="#project" class="link header_link">PROJECTS</a></li>
-                    <li class="headernav__item"><a href="#" class="link header_link">MEASUREMENT</a></li>
-                    <li class="headernav__item"><a href="#" class="link header_link">TEAM</a></li>
-                    <li class="headernav__item"><a href="#" class="link header_link">REVIEWS</a></li>
-                    <li class="headernav__item"><a href="#" class="link header_link">CONTACTS</a></li>
-                    <li class="headernav__item"><a  href="tel:+79287683239" class="link header_link_tel">+7 (928) 768-32-39</a> </li>
-
-                </ul>
+    <footer class="footer ">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__logo">
+                    <a href="#" class="footer__nav link is-logo">IC "Repair Design Project" </a>
+                </div>
+                <nav>
+                    <ul  class="footer__nav">
+                        <li class="footer__nav item"><a href="#" class="footer__nav link">HOME</a></li>
+                        <li class="footer__nav item"><a href="#project" class="footer __nav link">PROJECTS</a></li>
+                        <li class="footer__nav item"><a href="#" class="footer__nav link">MEASUREMENT</a></li>
+                        <li class="footer__nav item"><a href="#" class="footer__nav link">TEAM</a></li>
+                        <li class="footer__nav item"><a href="#" class="footer__nav link">REVIEWS</a></li>
+                        <li class="footer__nav item"><a href="#" class="footer__nav link">CONTACTS</a></li>
+                        <li class="footer__nav item"><a  href="tel:+79287683239" class="footer__nav link phone">+7 (928) 768-32-39</a> </li>
+    
+                    </ul>
+                    
+                </nav>
                 
-            </nav>
-            
-            <button class="button button_header">Request a call</button>
+                <button class="footer__button">Request a call</button>
+            </div>
         </div>
-    </footer>
+    </footer >
 </body>
 </html>
