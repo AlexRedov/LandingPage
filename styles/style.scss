@@ -446,7 +446,6 @@ input.button:hover {
   color:var(--primary);
 }
 .inputcheck {
-  margin-right:9px;
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -458,13 +457,12 @@ input.button:hover {
 }
 .inputcheck+label::before {
   content: '';
+  margin-right:9px;
+
   display: inline-block;
   width: 18px;
   height: 18px;
-  flex-shrink: 0;
-  flex-grow: 0;
   border: 1px solid var(--secondary);
-  margin-right: 0.5em;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
@@ -533,7 +531,7 @@ body * {
     }
     }
     background-color: var(--thirst);
-    /* position: sticky; */
+    position: sticky;
     top: 0%;
     z-index: 9999;
     .header__content {
