@@ -532,7 +532,7 @@ body * {
 /* Header */
 .header {
   background-color: var(--thirst);
-  /* position: sticky; */
+  position: sticky;
   top: 0%;
   z-index: 9999;
 }
@@ -581,11 +581,11 @@ body * {
 /* Hero section */
 .hero {
   background-image: url("../images/hero.jpg");
-  background-size: auto;
+  background-size: cover;
   height: 707px;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: round;
   position: relative;
+  padding-top: 194px;
 }
 .hero .container .hero__overlay {
   content: "";
@@ -595,10 +595,9 @@ body * {
   right: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
+  padding-left: 134px;
 }
 .hero .container .hero__content {
-  padding-top: 194px;
-  padding-left: 134px;
   padding-bottom: 208px;
   position: relative;
   z-index: 1;
@@ -637,6 +636,9 @@ body * {
 .projects .left {
   display: block;
   padding-bottom: 0px;
+}
+.projects .left .image__mobile {
+  display: none;
 }
 .projects .left h2 {
   margin-bottom: 34px;
@@ -1166,7 +1168,7 @@ body * {
 /* Section location */
 .location {
   background-image: url("../images/BG_location.jpg");
-  background-size: auto;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -1298,5 +1300,231 @@ body * {
 }
 
 /* End section footer */
+/* Media for mobile */
+@media screen and (max-width: 375px) {
+  /* For heaser */
+  body {
+    max-width: 375px;
+  }
+
+  .container {
+    max-width: 339px;
+    padding: 0px;
+  }
+
+  .header {
+    position: relative;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header nav {
+    display: none;
+  }
+  .header .header__button {
+    display: none;
+  }
+  .header .phone {
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .header .is-logo {
+    font-size: 11px;
+    line-height: 15px;
+    margin-right: 100px;
+  }
+
+  /* For section hero */
+  .hero {
+    height: 476px;
+    padding-top: 85px;
+  }
+  .hero h1 {
+    font-size: 23px;
+    line-height: 31px;
+  }
+  .hero .container .hero__content {
+    padding-bottom: 0px;
+  }
+  .hero .container .hero__content .hero__paragraph {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 60px;
+  }
+  .hero .container .hero__content .hero__button {
+    width: 100%;
+  }
+  .hero .container .hero__content .hero__button:last-child {
+    margin: 26px 0px;
+  }
+
+  /* For secttion projects */
+  .projects {
+    padding: 0px;
+    height: 1553px;
+  }
+  .projects .project__cities {
+    display: none;
+  }
+  .projects .project__complited {
+    flex-direction: column;
+    margin: 0px;
+  }
+  .projects .project__complited .image {
+    display: none;
+  }
+  .projects .project__complited .left {
+    padding-top: 36px;
+    text-align: center;
+  }
+  .projects .project__complited .left .image__mobile {
+    display: block;
+    margin-bottom: 37px;
+    position: relative;
+  }
+  .projects .project__complited .left .image__mobile .l__button, .projects .project__complited .left .image__mobile .r__button {
+    width: 36px;
+    height: 36px;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+  }
+  .projects .project__complited .left .image__mobile .l__button img, .projects .project__complited .left .image__mobile .r__button img {
+    padding: 10px;
+  }
+  .projects .project__complited .left .image__mobile .l__button {
+    top: 120px;
+    left: 14px;
+  }
+  .projects .project__complited .left .image__mobile .r__button {
+    top: 120px;
+    right: 14px;
+  }
+  .projects .project__complited .left h2 {
+    margin-top: 0px;
+    font-size: 22px;
+    line-height: 138%;
+    letter-spacing: -7%;
+    margin-bottom: 22px;
+  }
+  .projects .project__complited .left p {
+    font-size: 11px;
+    line-height: 158%;
+    margin-bottom: 60px;
+  }
+  .projects .project__complited .textgroup {
+    text-align: left;
+  }
+  .projects .project__complited .textgroup p {
+    width: auto;
+    margin-bottom: 26px;
+  }
+
+  /* For section control */
+  .control {
+    margin-top: -780px;
+  }
+  .control .control__icon .img::after {
+    right: 58%;
+  }
+  .control .control__icon .img::before {
+    left: 58%;
+  }
+  .control .control__wrapper .image {
+    width: 340px;
+    height: 207px;
+  }
+  .control .control__wrapper .background_play {
+    width: 37px;
+    height: 37px;
+    top: 85px;
+    left: 152px;
+  }
+  .control .control__wrapper .background_play .play {
+    padding: 5px;
+    margin: 0px;
+  }
+  .control .hr {
+    margin: 28px auto;
+    margin-bottom: 21px;
+    border-radius: 30px;
+  }
+  .control .container p {
+    font-size: 11px;
+    line-height: 170%;
+    color: var(--primary);
+  }
+  .control .control__form {
+    margin-top: -20px;
+  }
+  .control .control__form .input_item {
+    width: 100%;
+    margin-right: 0px;
+    border: none;
+    border-bottom: 1px solid var(--primary);
+  }
+  .control .control__form .input_item input {
+    background-color: transparent;
+    color: var(--primary);
+  }
+  .control .control__form .input_item .label1, .control .control__form .input_item .label2 {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .control .control__form .input_item:first-child {
+    margin-bottom: 63px;
+  }
+  .control .control__form .input_item:last-child {
+    margin-bottom: 106px;
+  }
+  .control .control__form .input_item2 {
+    width: 100%;
+    margin-top: -85px;
+    color: var(--primary);
+    font-size: 14px;
+    line-height: 163%;
+  }
+  .control .control__form .button {
+    width: 100%;
+    margin-top: 68px;
+  }
+
+  /* For section typerepaire*/
+  .typerepaire .img::after {
+    right: 58%;
+  }
+  .typerepaire .img::before {
+    left: 58%;
+  }
+  .typerepaire .typerepaire__main .typerepaire__block {
+    max-width: 339px;
+  }
+  .typerepaire .typerepaire__main .typerepaire__block img {
+    width: 100%;
+  }
+  .typerepaire .typerepaire__main .typerepaire__block .textblock {
+    width: 270px;
+    margin-left: 0px;
+  }
+  .typerepaire .typerepaire__main2 {
+    display: none;
+  }
+  .typerepaire .typerepaire__cost {
+    display: none;
+  }
+
+  /* For section fantasies */
+  /* For section clients */
+  .clients {
+    display: none;
+  }
+}
+/* For section location */
+/* For footer */
+/*  */
+/* End media */
 
 /*# sourceMappingURL=style.css.map */

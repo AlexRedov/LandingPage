@@ -26,12 +26,12 @@
                         <li class="header__nav item"><a href="#" class="header__nav link">TEAM</a></li>
                         <li class="header__nav item"><a href="#reviews" class="header__nav link">REVIEWS</a></li>
                         <li class="header__nav item"><a href="#" class="header__nav link">CONTACTS</a></li>
-                        <li class="header__nav item"><a  href="tel:+79287683239" class="header__nav link phone">+7 (928) 768-32-39</a> </li>
-    
                     </ul>
                     
                 </nav>
-                
+                <div class="header__phone">
+                    <a  href="tel:+79287683239" class="header__nav link phone">+7 (928) 768-32-39</a> 
+                </div>
                 <button class="header__button">Request a call</button>
             </div>
         </div>
@@ -77,8 +77,18 @@
                             Only a small part of the work performed by our company is presented<br> on the site. For 14 years on in the construction<br> 
                             market we have made happy more than 1000 families
                         </p>
+                        <div class="image__mobile">
+                            <div class="l__button">
+                                <img src="images/leftbutton.svg" alt="left button">
+                            </div>
+                            <div class="r__button">
+                                <img src="images/rightbutton.svg" alt="right button">
+                            </div>
+                            <img src="images/projectMedia.jpg" alt="Project Mobile">
+                        </div>
                         <div class="textgroup">
                             <div class="textgroup__city">
+                                
                                 <h3 class="titleh3__project">City:</h3>
                                 <p>Rostov-on-Don<br>
                                     LCD admiral</p>
@@ -116,10 +126,10 @@
                     </div>
                 </div>
                 <div class="control__wrapper">
-                    <img src="images/video.jpg" alt="video">
+                    <img class="image" src="images/video.jpg" alt="video">
                     <div class="background_play">
                         <div class="play">
-                            <img src="images/Play1.svg" alt="play">
+                            <img class="icon" src="images/Play1.svg" alt="play">
                         </div>
                     </div>
                     
@@ -136,11 +146,11 @@
                     <form class="control__form">
                         <div class="input_item">
                             <label class="control__form label1">Name</label>
-                            <input type="text" placeholder="What's your name:">
+                            <input type="text" value="What's your name:">
                         </div>
                         <div class="input_item">
                             <label class="control__form label2">Phone</label>
-                            <input type="phone" placeholder="Your phone number:">
+                            <input type="phone" value="Your phone number:">
                         </div>
                         
                         <input type="submit" value="Submit" class="button">
