@@ -396,6 +396,7 @@ h4 {
   font-family: Yeseva One;
   font-style: normal;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 button{
@@ -1057,7 +1058,9 @@ body * {
       padding-left: 100px;
       padding-top: 135px;
       margin-right: 140px;
-
+    .image__mobile {
+      display: none;
+    }
       .titleh3 {
         font-size: 27px;
         line-height: 37px;
@@ -1285,7 +1288,7 @@ body * {
           align-self: center;
         }        
       }
-      .titleh3__location {
+      .titleh4__location {
         margin: 0px;
         padding-top: 252px;
         padding-bottom: 26px;
@@ -1379,7 +1382,7 @@ body * {
 @media screen and (max-width: 375px) {
   /* For heaser */
   body {
-    max-width: 375px;
+    width: 375px;
   }
   .container {
     max-width: 339px;
@@ -1591,13 +1594,30 @@ body * {
     }
     .typerepaire__main {
       .typerepaire__block {
+        .list {
+          margin-bottom: 17px;
+
+        }
         img {
           width: 100%;
         }
         max-width: 339px;
         .textblock {
           width: 270px;
-          margin-left: 0px;
+          margin-left: -1px;
+          margin-bottom: 75px;
+          h4 {
+            margin-top: 25px;
+            margin-bottom: 13px;
+            font-size: 15px;
+            line-height: 120%;
+          }
+          .costcontent {
+            font-size: 15px;
+            line-height: 138%;
+            position: relative;
+            top: 27px;
+          }
         }
       }
     }
@@ -1606,15 +1626,150 @@ body * {
     }
     .typerepaire__cost {
       display: none;
+      
     }
+    
   }
 
   /* For section fantasies */
   .fantasies {
+    background-image: none;
+    .fantasies__overlay {
+      display: none;
+    } 
+    
+    .fantasies__content {
+      .images {
+        display: none;
+      }
+      .list {
+        padding-left: 0px;
+        padding-top: 0px;
+        .titleh3 {
+          font-size: 22px;
+          line-height: 138%;
+          width: 339px;
+          text-align: center;
+          margin-top:-130px;
+          margin-bottom: 25px;
+        }
+        .image__mobile {
+          
+          max-width: 340px;
+          display: block;
+          position: relative;
+          .l__button, .r__button {
+            img {
+              padding: 10px;
+            }
+            width: 36px;
+            height: 36px;
+            background-color:var(--secondary);
+            border-radius: 50%;
+            text-align: center;
+            position: absolute;
 
+          }
+          .l__button {
+            top: 105px;
+            left: 14px;
+          }
+          .r__button {
+            top: 105px;
+            right: 14px;
+          }
+        }
+        ul {
+          display: none;
+        }
+      }
+    }
+    
   }
   /* For section clients */
   .clients {
+    display: none;
+  }
+
+  /* For section location */
+  .location {
+    z-index: -1;
+    margin-top: -125px;
+    background-image: none;
+    background-color:var(--thirst);
+    height: 1125px;
+    .location__overlay {
+      display: none;
+    }
+    .container {
+      .location__content {
+        .form {
+          .titleh3__location {
+            margin-top: 135px;
+            align-self: center;
+            margin-bottom: 52px;
+            padding-bottom: 0px;
+          }
+          align-items: flex-start;
+          margin: 0px;
+          width: 339px;
+          .group__inputblock {
+            flex-direction: column;
+            .inputblock {
+              .inputtext {
+                width: 339px;
+                margin-bottom: 63px;
+              }
+            }
+          }
+          .inputblock {
+            .inputtext:last-child {
+              width: 339px;
+              margin-bottom: 24px;
+            }
+          }
+          .divcheckbox {
+            width: 339px;
+            margin-bottom: 67px;
+          }
+          
+          .button {
+            width: 100%;
+          }
+        }
+        .maps {
+          max-width: 339px;
+          height: 255px;
+          margin-top: 206px;
+          margin-bottom: 0px;
+        }
+        .titleh4__location {
+          font-size: 18px;
+          line-height: 138%;
+          text-align: center;
+          position: relative;
+          top: 690px;
+        }
+        .group__icon {
+          margin-top: 1px;
+          position: relative;
+          top: 690px;
+          .icon {
+            img {
+              padding: 5px;
+            }
+            margin-right: 20px;
+            width: 39px;
+            height: 39px;
+            
+          }
+        }
+      }
+    }
+    
+  }
+  /* For footer */
+  .footer {
     display: none;
   }
 }
@@ -1625,9 +1780,9 @@ body * {
 
 
 
-/* For section location */
 
-/* For footer */
+
+
 
 /*  */
 /* End media */

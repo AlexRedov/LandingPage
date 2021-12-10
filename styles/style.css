@@ -386,6 +386,7 @@ h4 {
   font-family: Yeseva One;
   font-style: normal;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 button {
@@ -1017,6 +1018,9 @@ body * {
   padding-top: 135px;
   margin-right: 140px;
 }
+.fantasies .fantasies__content .list .image__mobile {
+  display: none;
+}
 .fantasies .fantasies__content .list .titleh3 {
   font-size: 27px;
   line-height: 37px;
@@ -1224,7 +1228,7 @@ body * {
 .location .container .location__content .form .button {
   align-self: center;
 }
-.location .container .location__content .titleh3__location {
+.location .container .location__content .titleh4__location {
   margin: 0px;
   padding-top: 252px;
   padding-bottom: 26px;
@@ -1304,7 +1308,7 @@ body * {
 @media screen and (max-width: 375px) {
   /* For heaser */
   body {
-    max-width: 375px;
+    width: 375px;
   }
 
   .container {
@@ -1502,12 +1506,28 @@ body * {
   .typerepaire .typerepaire__main .typerepaire__block {
     max-width: 339px;
   }
+  .typerepaire .typerepaire__main .typerepaire__block .list {
+    margin-bottom: 17px;
+  }
   .typerepaire .typerepaire__main .typerepaire__block img {
     width: 100%;
   }
   .typerepaire .typerepaire__main .typerepaire__block .textblock {
     width: 270px;
-    margin-left: 0px;
+    margin-left: -1px;
+    margin-bottom: 75px;
+  }
+  .typerepaire .typerepaire__main .typerepaire__block .textblock h4 {
+    margin-top: 25px;
+    margin-bottom: 13px;
+    font-size: 15px;
+    line-height: 120%;
+  }
+  .typerepaire .typerepaire__main .typerepaire__block .textblock .costcontent {
+    font-size: 15px;
+    line-height: 138%;
+    position: relative;
+    top: 27px;
   }
   .typerepaire .typerepaire__main2 {
     display: none;
@@ -1517,13 +1537,132 @@ body * {
   }
 
   /* For section fantasies */
+  .fantasies {
+    background-image: none;
+  }
+  .fantasies .fantasies__overlay {
+    display: none;
+  }
+  .fantasies .fantasies__content .images {
+    display: none;
+  }
+  .fantasies .fantasies__content .list {
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+  .fantasies .fantasies__content .list .titleh3 {
+    font-size: 22px;
+    line-height: 138%;
+    width: 339px;
+    text-align: center;
+    margin-top: -130px;
+    margin-bottom: 25px;
+  }
+  .fantasies .fantasies__content .list .image__mobile {
+    max-width: 340px;
+    display: block;
+    position: relative;
+  }
+  .fantasies .fantasies__content .list .image__mobile .l__button, .fantasies .fantasies__content .list .image__mobile .r__button {
+    width: 36px;
+    height: 36px;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+  }
+  .fantasies .fantasies__content .list .image__mobile .l__button img, .fantasies .fantasies__content .list .image__mobile .r__button img {
+    padding: 10px;
+  }
+  .fantasies .fantasies__content .list .image__mobile .l__button {
+    top: 105px;
+    left: 14px;
+  }
+  .fantasies .fantasies__content .list .image__mobile .r__button {
+    top: 105px;
+    right: 14px;
+  }
+  .fantasies .fantasies__content .list ul {
+    display: none;
+  }
+
   /* For section clients */
   .clients {
     display: none;
   }
+
+  /* For section location */
+  .location {
+    z-index: -1;
+    margin-top: -125px;
+    background-image: none;
+    background-color: var(--thirst);
+    height: 1125px;
+  }
+  .location .location__overlay {
+    display: none;
+  }
+  .location .container .location__content .form {
+    align-items: flex-start;
+    margin: 0px;
+    width: 339px;
+  }
+  .location .container .location__content .form .titleh3__location {
+    margin-top: 135px;
+    align-self: center;
+    margin-bottom: 52px;
+    padding-bottom: 0px;
+  }
+  .location .container .location__content .form .group__inputblock {
+    flex-direction: column;
+  }
+  .location .container .location__content .form .group__inputblock .inputblock .inputtext {
+    width: 339px;
+    margin-bottom: 63px;
+  }
+  .location .container .location__content .form .inputblock .inputtext:last-child {
+    width: 339px;
+    margin-bottom: 24px;
+  }
+  .location .container .location__content .form .divcheckbox {
+    width: 339px;
+    margin-bottom: 67px;
+  }
+  .location .container .location__content .form .button {
+    width: 100%;
+  }
+  .location .container .location__content .maps {
+    max-width: 339px;
+    height: 255px;
+    margin-top: 206px;
+    margin-bottom: 0px;
+  }
+  .location .container .location__content .titleh4__location {
+    font-size: 18px;
+    line-height: 138%;
+    text-align: center;
+    position: relative;
+    top: 690px;
+  }
+  .location .container .location__content .group__icon {
+    margin-top: 1px;
+    position: relative;
+    top: 690px;
+  }
+  .location .container .location__content .group__icon .icon {
+    margin-right: 20px;
+    width: 39px;
+    height: 39px;
+  }
+  .location .container .location__content .group__icon .icon img {
+    padding: 5px;
+  }
+
+  /* For footer */
+  .footer {
+    display: none;
+  }
 }
-/* For section location */
-/* For footer */
 /*  */
 /* End media */
 
