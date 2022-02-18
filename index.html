@@ -64,9 +64,6 @@
         <section class="projects">
             <div class="container">
                 <ul class="project__cities">
-                    <li><a href="#" class="project__cities link">Rostov-on-Don, Admiral</a></li>
-                    <li><a href="#" class="project__cities link">Sochi Thieves</a></li>
-                    <li><a href="#" class="project__cities link">Rostov-on-Don Patriotic</a></li>
                 </ul>
                 <div class="project__complited" id="project">
                     <div class="project__complited left">
@@ -86,31 +83,15 @@
                             </div>
                             <img src="images/projectMedia.jpg" alt="Project Mobile">
                         </div>
-                        <div class="textgroup">
-                            <div class="textgroup__city">
-                                
-                                <h3 class="titleh3__project">City:</h3>
-                                <p>Rostov-on-Don<br>
-                                    LCD admiral</p>
-                            </div>
-                            <div class="textgroup__area">
-                                <h3 class="titleh3__project">Appartament area:</h3>
-                                <p>81m2</p>
-                            </div>
-                            <div class="textgroup__time">
-                                <h3 class="titleh3__project">Repair time:</h3>
-                                <p>3.5 months</p> 
-                            </div>
-                            <div class="textgroup__cost">
-                                <h3 class="titleh3__project">Repair cost:</h3>
-                                <p>Uppon request</p>
-                            </div>
+                        <div class="textgroup-info">
+                        </div>
+                        <div class="slider__control">
+                            <img class="slider__arrow left" src="images/left.svg" alt="arrow__left">
+                            <div class="slider__dots"></div>
+                            <img class="slider__arrow right" src="images/right.svg" alt="arrow__right">
                         </div>
                     </div>
-                    <div class="project__complited image">
-                        <img src="images/projects.jpg" alt="sample project" class="image_project">
-
-                    </div>
+                    <div class="slider__images"></div>
                 </div>
                 
             </div>
@@ -146,11 +127,11 @@
                     <form class="control__form">
                         <div class="input_item">
                             <label class="control__form label1">Name</label>
-                            <input type="text" value="What's your name:">
+                            <input type="text" value="What's your name:" required>
                         </div>
                         <div class="input_item">
                             <label class="control__form label2">Phone</label>
-                            <input type="tel" value="Your phone number:">
+                            <input type="tel" value="Your phone number:"required>
                         </div>
                         
                         <input type="submit" value="Submit" class="button">
@@ -286,15 +267,15 @@
                         <div class="group__inputblock">
                             <div class="inputblock">
                                 <label class="label">Name</label>
-                                <input class="inputtext" type="text" value="What's your name:">
+                                <input class="inputtext" type="text" value="What's your name:" required>
                             </div>
                             <div class="inputblock">
                                 <label class="label">Phone</label>
-                                <input class="inputtext" type="tel" value="Your phone number:">
+                                <input class="inputtext" type="tel" value="Your phone number:" required>
                             </div>
                             <div class="inputblock">
                                 <label class="label">Email</label>
-                                <input class="inputtext" type="email" value="Your email">
+                                <input class="inputtext" type="email" value="Your email" required>
                             </div>
                         </div>
 
@@ -507,16 +488,16 @@
                         <div class="group__inputblock">
                             <div class="inputblock">
                                 <label class="label">Name</label>
-                                <input type="text" class="inputtext" value="What's your name:">
+                                <input type="text" class="inputtext" value="What's your name:" required>
                             </div>
                             <div class="inputblock">
                                 <label class="label">Phone</label>
-                                <input type="text" class="inputtext" value="Your phone number:">
+                                <input type="text" class="inputtext" value="Your phone number:" required>
                             </div>
                         </div>
                         <div class="inputblock">
                             <label class="label">Question</label>
-                            <input type="text" class="inputtext" value="I want to know:">
+                            <input type="text" class="inputtext" value="I want to know:"  required>
                         </div>
                         <div class="divcheckbox">
                             <input type="checkbox" class="inputcheck" id="checkbox__3">
@@ -572,5 +553,6 @@
             </div>
         </div>
     </footer >
+    <script src="js/index.js"></script>
 </body>
 </html>

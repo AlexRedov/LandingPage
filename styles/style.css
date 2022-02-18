@@ -632,6 +632,7 @@ body * {
   padding-bottom: 415px;
 }
 .projects .project__complited {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-right: 50px;
@@ -645,6 +646,7 @@ body * {
 }
 .projects .left h2 {
   margin-bottom: 34px;
+  margin-top: 0;
 }
 .projects .left p {
   font-size: 14px;
@@ -659,7 +661,8 @@ body * {
   display: flex;
   justify-content: flex-end;
 }
-.projects .project__cities.link {
+.projects .project__cities__link {
+  border-bottom: 1px solid var(--thirst);
   margin-right: 60px;
   text-decoration: none;
   font-family: Yeseva One;
@@ -670,30 +673,79 @@ body * {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.3);
 }
-.projects .project__cities.link:hover {
-  text-decoration: underline;
+.projects .project__cities__link.active {
+  border-bottom: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+.projects .project__cities__link:hover {
+  cursor: pointer;
   color: var(--secondary);
 }
 
-.textgroup {
+.textgroup-info .textgroup-info__items {
+  display: none;
+}
+.textgroup-info .textgroup-info__items.active {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-.textgroup .titleh3__project {
+.textgroup-info .titleh3__project {
   font-size: 18px;
   line-height: 25px;
   color: var(--secondary);
   margin-bottom: 10px;
 }
-.textgroup.textgroup p {
+.textgroup-info .textgroup-info__item p {
   margin: 0;
   font-size: 13px;
   line-height: 21px;
 }
 
-.project__complited .image {
-  padding-bottom: 0px;
+.slider__images .image {
+  background-size: cover;
+  background-position: center center;
+  width: 679px;
+  height: 482px;
+  opacity: 0;
+  transition: opacity 800ms ease;
+  position: absolute;
+  right: 50px;
+  top: 0;
+}
+
+.slider__images .image.active {
+  opacity: 1;
+}
+
+.slider__control {
+  display: flex;
+  margin-top: 45px;
+}
+.slider__control .left {
+  padding-right: 30px;
+}
+.slider__control .left:hover, .slider__control .slider__dot:hover, .slider__control .right:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+}
+.slider__control .slider__dots {
+  display: flex;
+}
+.slider__control .slider__dot {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  margin-right: 18px;
+}
+.slider__control .slider__dot:nth-child(3) {
+  margin-right: 30px;
+}
+.slider__control .slider__dot:hover, .slider__control .slider__dot.active {
+  background: #FFFFFF;
 }
 
 /* End section projects */
@@ -1389,6 +1441,9 @@ body * {
   .projects .project__complited .textgroup p {
     width: auto;
     margin-bottom: 26px;
+  }
+  .projects .project__complited .slider__control {
+    display: none;
   }
 
   /* For section control */
