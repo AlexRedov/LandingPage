@@ -648,6 +648,16 @@ body * {
   margin-bottom: 34px;
   margin-top: 0;
 }
+.projects .left h2::after {
+  content: "";
+  width: 92px;
+  height: 1px;
+  background: #E3B873;
+  border-radius: 30px;
+  margin-left: 40px;
+  display: inline-flex;
+  vertical-align: super;
+}
 .projects .left p {
   font-size: 14px;
   line-height: 27px;
